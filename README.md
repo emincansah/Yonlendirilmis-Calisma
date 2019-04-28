@@ -1,1 +1,0 @@
-# Yonlendirilmis-Calisma
