@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Bisque" Name="ekran" >
+        <Label Content="ARAÇ KAYIT" FontSize="30" HorizontalAlignment="Center" Margin="174,0,173,270">
+
+        </Label>
+        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="50,50">
+            <Label Content="Plaka" Height="25" Margin="5"></Label>
+            <Label Content="Şase No"  Height="25" Margin="5"></Label>
+            <Label Content="KM"  Height="25" Margin="5"></Label>
+            <Label Content="Parça Ekle"  Height="25" Margin="5"></Label>
+            <Label Content="Tarih"  Height="25" Margin="5"></Label>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="150,50">
+            <TextBox  Margin="5" Height="25" Width="110"></TextBox>
+            <TextBox  Margin="5" Height="25" Width="110"></TextBox>
+            <TextBox  Margin="5" Height="25" Width="110"></TextBox>
+            <StackPanel >
+                <ComboBox  Margin="5" Height="25" Width="130"></ComboBox>
+            </StackPanel>
+            <DatePicker  Margin="5" Height="25" Width="110" />
+
+        </StackPanel>
+
+        <ListBox HorizontalAlignment="Left" Height="300" Margin="348,10,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button Content="EKLE" HorizontalAlignment="Left" Margin="290,160,0,0" VerticalAlignment="Top" Width="58" Height="26"/>
+
+        <Grid Height="320" Width="526" HorizontalAlignment="Left" Background="Bisque" Margin="-618,10,0,-10" VerticalAlignment="Top" >
+
+            <Label Content="Kullanıcı Adı" Width="55" Height="25" Margin="50,115,421,180"></Label>
+            <Label Content="Şifre" Width="55" Height="25" Margin="50,145,420,150"></Label>
+            <RadioButton Content="Servis Yetkilisi" HorizontalAlignment="Left" Margin="105,88,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="Yedek Parça Yetkilisi" HorizontalAlignment="Left" Margin="224,88,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="224,115,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="224,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+            <Button Content="GİRİŞ" HorizontalAlignment="Left" Margin="224,182,0,0" VerticalAlignment="Top" Width="123" Height="27"/>
+        </Grid>
+        <Grid Height="320" Width="526" HorizontalAlignment="Left" Background="Bisque" Margin="-358,382,0,-382" VerticalAlignment="Top" >
+
+            <Label Content="ARAÇ LİSTESİ" Height="25" Margin="24,29,392,266" RenderTransformOrigin="0.381,-1.12"/>
+            <Label Content="YEDEK PARÇA" FontSize="30" HorizontalAlignment="Left" Margin="155,10,0,0" VerticalAlignment="Top" Height="46" Width="207"/>
+            <ScrollViewer HorizontalAlignment="Left" Height="251" Margin="10,59,0,0" VerticalAlignment="Top" Width="124"/>
+            <WrapPanel HorizontalAlignment="Left" Height="249" Margin="155,61,0,0" Background="White" VerticalAlignment="Top" Width="361">
+                
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</Window>
